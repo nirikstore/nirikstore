@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirik Store</title>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001F3F; /* Azul metálico escuro */
+            color: #C0C0C0; /* Prata metálico */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #004080; /* Azul do logotipo */
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px; /* Tamanho do logotipo */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            animation: slide-in 2s ease; /* Animação suave */
+        }
+
+        /* Animação da mensagem de boas-vindas */
+        @keyframes slide-in {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Ícones Sociais */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+        .social-icons img {
+            width: 40px; /* Tamanho padrão dos logotipos */
+            height: auto;
+        }
+        .social-icons .facebook {
+            color: #1877F2; /* Azul oficial do Facebook */
+            font-size: 40px;
+        }
+        .social-icons .instagram {
+            font-size: 40px;
+            background: linear-gradient(45deg, #F77737, #E1306C, #C13584);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(90deg, #002E5D, #004080); /* Gradiente metálico */
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para o menu */
+        }
+        nav a {
+            text-decoration: none;
+            color: #C0C0C0; /* Prata metálico */
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #FFD700; /* Dourado metálico ao passar o mouse */
+            color: #001F3F; /* Azul escuro */
+        }
+
+        /* Conteúdo principal */
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        main h2 {
+            font-size: 28px;
+            color: #FFD700; /* Dourado metálico */
+            margin-bottom: 10px;
+        }
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-family: "Verdana", sans-serif; /* Fonte mais legível */
+        }
+
+        /* Seção Sobre Nós */
+        #sobre-nos {
+            padding: 40px 20px;
+            background-color: #003366; /* Fundo azul metálico */
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra */
+        }
+        #sobre-nos h2 {
+            font-size: 28px;
+            color: #FFD700; /* Dourado metálico */
+            margin-bottom: 20px;
+        }
+        #sobre-nos p {
+            font-size: 18px;
+            line-height: 1.8;
+            font-family: "Verdana", sans-serif;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #004080; /* Azul do logotipo */
+            text-align: center;
+            padding: 20px 0;
+            color: #C0C0C0; /* Prata metálico */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Sombra para o rodapé */
+        }
+    </style>
+    <!-- Adicionando biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="logotipo.png" alt="Logotipo da Nirik Store">
+        <h1>Bem-vindo à Nirik Store</h1>
+        <!-- Ícones Sociais -->
+        <div class="social-icons">
+            <a href="https://shopee.com.br/shop/1453363971" target="_blank" title="Shopee">
+                <img src="Shopee_Logo.png" alt="Shopee Logo">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572434885022" target="_blank" title="Facebook">
+                <i class="fab fa-facebook facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/nirikstore?igsh=dGh6eXJxOW45ajY1" target="_blank" title="Instagram">
+                <i class="fab fa-instagram instagram"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h2>Produtos com preços exclusivos</h2>
+        <p>Aproveite nossas ofertas imperdíveis em itens importados e garanta o melhor custo-benefício!</p>
+    </main>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>
+            Na <strong>Nirik Store</strong>, acreditamos que cada produto conta uma história. Fundada com a missão de trazer 
+            <strong>oportunidades únicas</strong> e <strong>produtos acessíveis</strong> para nossos clientes, nossa loja é mais do que um simples e-commerce — 
+            é uma ponte que conecta você às melhores ofertas e tendências do mercado global.
+        </p>
+        <p>
+            Trabalhamos com parceiros internacionais de confiança para garantir produtos de alta qualidade a preços competitivos. 
+            Nosso objetivo é tornar o processo de importação simples e acessível para todos, permitindo que você aproveite itens exclusivos 
+            sem complicações.
+        </p>
+        <p>
+            Na <strong>Nirik Store</strong>, valorizamos a sua experiência. Estamos comprometidos em oferecer um atendimento personalizado, entrega ágil e 
+            a satisfação de encontrar exatamente o que você procura.
+        </p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Nirik Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
