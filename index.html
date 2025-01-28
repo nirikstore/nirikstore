@@ -21,14 +21,14 @@
             text-align: center;
         }
         header img {
-            max-width: 250px; /* Aumentado em 25% do tamanho original */
+            max-width: 250px;
             height: auto;
             margin-bottom: 10px;
         }
         header h1 {
-            font-size: 24px;
+            font-size: 36px; /* Mensagem de boas-vindas aumentada em 50% */
             margin: 10px 0;
-            animation: slide-in 2s ease; /* Animação suave */
+            animation: slide-in 2s ease;
         }
 
         /* Animação da mensagem de boas-vindas */
@@ -48,28 +48,17 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 10px 0; /* Espaçamento ajustado */
-        }
-        .social-icons a {
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-        .social-icons a:hover {
-            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+            margin-top: 10px;
         }
         .social-icons img {
-            width: 40px; /* Tamanho padrão dos logotipos */
-            height: auto;
+            width: 60px; /* Tamanho padronizado */
+            height: 60px;
+            border-radius: 50%; /* Deixa as imagens redondas, opcional */
+            object-fit: cover; /* Ajusta a imagem ao tamanho definido */
+            transition: transform 0.3s ease; /* Efeito de zoom */
         }
-        .social-icons .facebook {
-            color: #1877F2; /* Azul oficial do Facebook */
-            font-size: 40px;
-        }
-        .social-icons .instagram {
-            font-size: 40px;
-            background: linear-gradient(45deg, #F77737, #E1306C, #C13584);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .social-icons a:hover img {
+            transform: scale(1.1); /* Zoom ao passar o mouse */
         }
 
         /* Navegação */
@@ -77,21 +66,21 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            background: linear-gradient(90deg, #002E5D, #004080); /* Gradiente metálico */
+            background: linear-gradient(90deg, #002E5D, #004080);
             padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para o menu */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         nav a {
             text-decoration: none;
-            color: #C0C0C0; /* Prata metálico */
+            color: #C0C0C0;
             font-size: 18px;
             padding: 8px 15px;
             border-radius: 4px;
             transition: all 0.3s ease;
         }
         nav a:hover {
-            background-color: #FFD700; /* Dourado metálico ao passar o mouse */
-            color: #001F3F; /* Azul escuro */
+            background-color: #FFD700;
+            color: #001F3F;
         }
 
         /* Conteúdo principal */
@@ -101,27 +90,27 @@
         }
         main h2 {
             font-size: 28px;
-            color: #FFD700; /* Dourado metálico */
+            color: #FFD700;
             margin-bottom: 10px;
         }
         main p {
             font-size: 18px;
             line-height: 1.6;
-            font-family: "Verdana", sans-serif; /* Fonte mais legível */
+            font-family: "Verdana", sans-serif;
         }
 
         /* Seção Sobre Nós */
         #sobre-nos {
             padding: 40px 20px;
-            background-color: #003366; /* Fundo azul metálico */
+            background-color: #003366;
             text-align: center;
             border-radius: 12px;
             margin-top: 20px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
         #sobre-nos h2 {
             font-size: 28px;
-            color: #FFD700; /* Dourado metálico */
+            color: #FFD700;
             margin-bottom: 20px;
         }
         #sobre-nos p {
@@ -130,35 +119,55 @@
             font-family: "Verdana", sans-serif;
         }
 
+        /* Botão flutuante do WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: transparent; /* Remover fundo verde */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-button img {
+            width: 60px; /* Ajusta ao tamanho do botão */
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%; /* Torna a imagem circular */
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1); /* Zoom ao passar o mouse */
+        }
+
         /* Rodapé */
         footer {
-            background-color: #004080; /* Azul do logotipo */
+            background-color: #004080;
             text-align: center;
             padding: 20px 0;
-            color: #C0C0C0; /* Prata metálico */
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Sombra para o rodapé */
+            color: #C0C0C0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
         }
     </style>
-    <!-- Adicionando biblioteca de ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <img src="logotipo.png" alt="Logotipo da Nirik Store">
-        <!-- Ícones Sociais abaixo do logotipo -->
+        <!-- Ícones Sociais -->
         <div class="social-icons">
             <a href="https://shopee.com.br/shop/1453363971" target="_blank" title="Shopee">
                 <img src="Shopee_Logo.png" alt="Shopee Logo">
             </a>
             <a href="https://www.facebook.com/profile.php?id=61572434885022" target="_blank" title="Facebook">
-                <i class="fab fa-facebook facebook"></i>
+                <img src="logoface.png" alt="Facebook Logo">
             </a>
             <a href="https://www.instagram.com/nirikstore?igsh=dGh6eXJxOW45ajY1" target="_blank" title="Instagram">
-                <i class="fab fa-instagram instagram"></i>
+                <img src="logoinsta.png" alt="Instagram Logo">
             </a>
         </div>
         <h1>Bem-vindo à Nirik Store</h1>
@@ -167,8 +176,7 @@
     <!-- Navegação -->
     <nav>
         <a href="#">Início</a>
-        <a href="#">Produtos</a>
-        <a href="#">Contato</a>
+        <a href="contato.html">Contato</a>
         <a href="#sobre-nos">Sobre Nós</a>
     </nav>
 
@@ -196,6 +204,11 @@
             a satisfação de encontrar exatamente o que você procura.
         </p>
     </section>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511911936729" target="_blank" class="whatsapp-button" title="Fale conosco pelo WhatsApp">
+        <img src="logowatsapp.png" alt="WhatsApp Logo">
+    </a>
 
     <!-- Rodapé -->
     <footer>
